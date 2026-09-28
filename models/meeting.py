@@ -34,10 +34,14 @@ class MeetingResponse(BaseModel):
 
 
 class Brief(BaseModel):
-    key_topics: list[str]
-    previous_discussions: list[str]
+    client_overview: list[str]
+    previous_interests: list[str]
+    key_concerns: list[str]
+    important_stakeholders: list[str]
+    competitors: list[str]
     talking_points: list[str]
     questions_to_ask: list[str]
+    suggested_next_steps: list[str]
 
 
 class PrepareResponse(BaseModel):
